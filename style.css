@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #211f1f;
+    font-family: sans-serif;
+
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    color: #000000;
+}
+
+h2{
+    font-weight: 800;
+    color: #000000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+    animation: surgir 5s ease-out;
+    animation-timeline: view();
+    animation-range: cover -5% cover 40%;
+}
+
+section.modulo p {
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: 1.4em;
+    color: #000000;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    
+}
+
+section.modulo h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #000000;
+    font-family: 'DM Serif Display', serif;
+}
+
+section.modulo.content {
+    padding: 40px;
+    background: #ffffff;
+}
+
+section.modulo.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax h1 {
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000a2;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 50;
+}
+
+section.modulo.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 80%, #ffffff 100%);
+}
+
+
+section.modulo.parallax-1 {
+    
+    background-image: url("https://cdn.pixabay.com/photo/2014/05/07/06/44/cat-339400_1280.jpg");
+}
+section.modulo.parallax-2 {
+    
+    background-image: url("https://cdn.pixabay.com/photo/2015/06/07/19/42/animal-800760_1280.jpg");
+}
+
+section.modulo.parallax-3 {
+   
+    background-image: url("https://cdn.pixabay.com/photo/2021/12/07/18/30/cat-6853848_1280.jpg");
+}
+
+section.modulo.parallax-4{
+   
+    background-image: url("https://cdn.pixabay.com/photo/2023/06/14/06/22/cat-8062388_1280.jpg");
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+
+}
+
+@media all and (max-width: 760px) {
+
+    section.modulo p {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 25px;
+        color: #000000;
+        font-weight: 800;
+    }
+
+    section.modulo h2{
+        font-size: 27px;
+        color: #000000;
+    }
+
+    section.modulo.parallax h1 {
+        font-size: 3em;
+    }
+
+    section.modulo.content {
+        width: 80%;
+        background: #ffffff;
+    }
+
+    section.modulo.parallax-1 {
+        background-image: url("https://cdn.pixabay.com/photo/2019/05/04/15/38/cat-4178329_1280.jpg");
+    }
+
+    section.modulo.parallax-2 {
+        background-image: url("https://i.pinimg.com/564x/fe/0c/cb/fe0ccb700f47b05b76a79753b4b15de1.jpg");
+    }
+
+    section.modulo.parallax-3 {
+        background-image: url("https://i.pinimg.com/564x/a2/e9/70/a2e97087637b3b74ec16812e8480f5b3.jpg");
+    }
+
+    section.modulo.parallax-4 {
+        background-image: url("https://i.pinimg.com/564x/6e/ac/03/6eac03a08dff6b557024996dc9cd9e38.jpg");
+    }
+
+}
+
+footer{
+    background-color: #ffabab;
+    color: #000000;
+    text-align: center;
+}
